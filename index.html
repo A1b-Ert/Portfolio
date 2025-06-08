@@ -1,70 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
+<meta name='viewport' content='width=device-width, initial-scale=1'/><html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Albert Sunny | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <title>Abid TS - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      min-height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #e0f7fa);
+      color: #333;
+    }
+    .sidebar {
+      width: 250px;
+      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .sidebar img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid #fff;
+      object-fit: cover;
+    }
+    .sidebar h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+    .sidebar p, .sidebar a {
+      font-size: 14px;
+      color: #cfe3ea;
+      margin-bottom: 12px;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      color: #fff;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 30px;
+      background: #fafafa;
+    }
+
+    .section {
+      background: #ffffff;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-left: 5px solid #0097a7;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+    }
+
+    .section h3 {
+      color: #00796b;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        padding: 20px;
+      }
+      .main-content {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <header>
-    <nav>
-      <a href="#home" class="nav-link">Home</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </nav>
-  </header>
-
-  <section id="home" class="hero">
-    <h2>Albert Sunny</h2>
-    <p>Software Engineer in the Making</p>
-  </section>
-
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I’m Albert Sunny, a Computer Science student at Amal Jyothi College of Engineering with a keen interest in Software Engineering. I’m currently focused on building strong problem-solving skills, seeking internship opportunities, and growing into a capable, reliable software engineer. I value being curious, disciplined, and a strong team player.
+  <div class="sidebar">
+    <img src="https://media.licdn.com/dms/image/v2/D4E03AQGS3mKEsOeUug/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1731645379260?e=2147483647&v=beta&t=cN6bFEoBgq38jdL53n0r2g4cw3EqQpggf5z9zu0whAQ" />
+    <h2>Abid TS</h2>
+    <p><strong>Student</strong></p>
+    <p>Computer Science Engineering</p>
+    <br/>
+    <p><strong>Email:</strong><br> abidts2028@cs.ajce.in</p>
+    <p><strong>LinkedIn:</strong><br>
+      <a href="https://www.linkedin.com/in/abid-ts-500b82337" target="_blank">linkedin.com/in/abid-ts</a>
     </p>
-  </section>
+    <p><strong>Instagram:</strong><br>
+      <a href="https://www.instagram.com/aabbidhh?utm_source=qr&igsh=MTdodG02em16NHp6ZQ==" target="_blank">aabbidhh</a>
+    </p>
+  </div>
 
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <p>I'm currently developing a Smart Attendance System 💡 using QR codes and facial recognition.
-      The goal is to automate classroom attendance and generate real-time reports for both students and faculty.
-      It's being built using Python, OpenCV, and Firebase.</p>
-  </section>
-
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <p>Basic learning in;</p>
-    <ul>
-      <li>HTML, CSS, JavaScript, Figma</li>
-      <li>Responsive Web Design</li>
-      <li>Python, C</li>
-      <li>Git & GitHub</li>
-    </ul>
-  </section>
-
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: albertsunny2028@cs.ajce.in</p>
-    <div class="contact-info">
-      <a href="mailto:albertsunny2028@cs.ajce.in" title="Email"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.linkedin.com/in/albert-sunny-655907338" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/varki___?utm_source=qr" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://github.com/A1b-Ert" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+  <div class="main-content">
+    <div class="section">
+      <h3>About Me</h3>
+      <p>I am a Computer Science Engineering student at <a href="https://www.ajce.in" target="_blank">Amal Jyothi College of Engineering, Kanjirappally</a>. I enjoy exploring new technologies and building creative solutions.</p>
     </div>
-  </section>
 
-  <footer>
-    &copy; 2025 Albert Sunny. All rights reserved.
-  </footer>
+    <div class="section">
+      <h3>Education</h3>
+      <p><strong>College:</strong> <a href="https://www.ajce.in" target="_blank">Amal Jyothi College of Engineering, Kottayam (2024–28)</a></p>
+      <p><strong>Schooling:</strong> St. Dominic's Higher Secondary School, Kanjirappally</p>
+    </div>
 
-  <script src="script.js"></script>
+    <div class="section">
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Shell Scripting</li>
+        <li>Python Programming</li>
+        <li>MySQL & Basic DBMS</li>
+        <li>Problem Solving</li>
+        <li>Analytical Thinking</li>
+      </ul>
+    </div>
+  </div>
+
 </body>
 </html>
